@@ -17,7 +17,9 @@ const LandingPage: React.FC<LandingPageProps> = ({ selectedGender, setSelectedGe
 
     const handleSelect = (gender: Gender) => {
         setSelectedGender(gender);
-        navigate("/quiz");
+        setTimeout(() => {
+            navigate('/quiz');
+        }, 500);
     };
 
     return (
